@@ -6,7 +6,7 @@ import { useGetTokenDetailsCallback } from "./erc20-hooks";
 import BN from "bignumber.js";
 import { decodeCallData2 } from "utils/abi-decoder";
 import { lhFillerAbi } from "abis/lhFiller-abi";
-import axios, { CancelToken } from "axios";
+import axios from "axios";
 const ERC20_TRANSFER_EVENT_TOPIC = ethers.utils.id(
   "Transfer(address,address,uint256)"
 );
