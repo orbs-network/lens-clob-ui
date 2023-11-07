@@ -1,0 +1,83 @@
+import { Configs } from "@orbs-network/twap";
+
+export const chainData = {
+  137: {
+    libConfig: Configs.QuickSwap,
+    networkName: "poly",
+    twap: "0xceFf098C9199c5d9cf24078dc14Eb8F787631cC0",
+    twapLens: "0x8ffde23Fba2d7Aea9C3CBf2d5B7B533BB46754a8",
+    wToken: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+    takers: [
+      "0x987644e02EDDAd595EdF3bd8c85D8735b58bE595",
+      "0xBeDf3660c6524eFe533b4058E0c726535ac251a2",
+    ],
+    rpcUrl: "https://polygon-rpc.com/",
+    scannerDomain: "https://api.polygonscan.com",
+    scannerK: "CVB9NCEBSA77P6WI4EUDFB3W57I5141JA2",
+    scannerApi: "https://api.polygonscan.com",
+    lhFiller: "0x64bc3532991d8147167ee028a7adbf01c05594f7",
+  },
+  250: {
+    libConfig: Configs.QuickSwap,
+    networkName: "ftm",
+    twap: "0xBb9F828E34A1327607c3e4eA3dD35891398DD5EE",
+    twapLens: "0x042799657E971855eD619046aeDf7F30DB56d2D6",
+    wToken: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+    takers: [
+      "0xC9a54b677a5e61866DC0bF0BE372234E6a285A3C",
+      "0xa8BCc5D48756602F7413604d443880e767c53c04",
+    ],
+    rpcUrl: "https://rpcapi.fantom.network",
+    scannerDomain: "https://api.ftmscan.com",
+    scannerK: "MTXCF8NB5CNT1U56RSQKEKZRNKSIJXMWKB",
+    scannerApi: "https://api.ftmscan.com",
+    lhFiller: "",
+  },
+  43114: {
+    libConfig: Configs.QuickSwap,
+    networkName: "avax",
+    twap: "0xF2687e119B0A4aB00bED9c9F425403566D605020",
+    twapLens: "0xfA1e5Da0Cbb780b891Cd635264354a9F4d3A726E",
+    wToken: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    takers: [
+      "0x6e7b7DeDC769D94A7cF00356C18EB37532598Aaa",
+      "0xAbC62A017121867ef75AA8c92D1E58BE95121410",
+    ],
+    rpcUrl: "https://avalanche-c-chain.publicnode.com",
+    scannerDomain: "https://api.snowtrace.io",
+    scannerK: "G3284SZ7GHWY4IQCCZI47CJSTGMJANGIR8",
+    scannerApi: "https://api.snowtrace.io",
+    lhFiller: "",
+  },
+  42161: {
+    libConfig: Configs.QuickSwap,
+    networkName: "arb",
+    twap: "0xD63430c74C8E70D9dbdCA04C6a9E6E9E929028DA",
+    twapLens: "0xD13609A8ace04D11Ea2FFE176B69dF77C6d9375E",
+    wToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    takers: [
+      "0x0a341C950B787431E4C16fdf33B88c793caa7F66",
+      "0x48423e62acbfEF7779b5b4a5E7d6Fbd39E623d78",
+    ],
+    rpcUrl: "https://arb-mainnet-public.unifra.io/",
+    scannerDomain: "https://api.arbiscan.io",
+    scannerK: "QPZ9EA4UVQF324K386TD1GD9UWIPSYB63P",
+    scannerApi: "https://api.arbiscan.io",
+    lhFiller: "",
+  },
+  56: {
+    libConfig: Configs.QuickSwap,
+    networkName: "bsc",
+    rpcUrl: "https://bsc-dataseed2.defibit.io/",
+    scannerDomain: "https://bscscan.com",
+    scannerK: "RI4KRJ2XZDQDDD8XVW4GWZNK2SUM3E6CHA",
+    scannerApi: "https://api.bscscan.com/",
+    twap: "0x25a0A78f5ad07b2474D3D42F1c1432178465936d",
+    twapLens: "0x3b7C090857a4068e16396550423ebadae502768F",
+    wToken: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    takers: ["0xED2e30Ed2e6df7267F4bfe2e1b2E0bE05C289B83"],
+    lhFiller: "",
+  },
+};
+
+export const DEFAULT_NETWORK = 137;
